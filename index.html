@@ -1,23 +1,27 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="es">
 <head>
-    <title>FOTOS</title>
+<meta charset="UTF-8">
+<title>Login JS</title>
+<link rel="stylesheet" href="styles.css">
 </head>
-<body>
-   <H1>HOLA ESTE ES MI PROYECTO</H1>
-   <hr>
-<!--hola-->
-<p>
-fotos <span style="color:blue">  aqui</span> queso
-<a href="https://www.youtube.com/watch?v=NC9CDHqFpFo"> you tube</a>
 
-</p>
-   <b>hello</b>
-<img src="LUFY.jpg" width="500"/>
-<h3>hola</h3>
-<img src="https://transturin.com/wp-content/uploads/2020/11/p2.jpg" width="500"/>
-<h4>tambaqui</h4>
-hola 
-<button> ir a </button>
+<body>
+
+<div class="container" id="loginBox">
+    <h2>Login</h2>
+    <input type="text" id="user" placeholder="Usuario">
+    <input type="password" id="pass" placeholder="Contraseña">
+    <button onclick="login()">Entrar</button>
+    <p class="error" id="error"></p>
+</div>
+
+<div class="container" id="welcomeBox" style="display:none;">
+    <h2>Bienvenido</h2>
+    <p id="nombreUsuario"></p>
+    <button onclick="logout()">Cerrar sesión</button>
+</div>
+
+<script src="script.js"></script>
 </body>
 </html>
